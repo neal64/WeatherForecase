@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="weather_units">%1$s\u2109</string>
+    <string name="main_humidity">"http://openweathermap.org/img/w/"%1$s".png"</string>
+    <string name="main_temp">%1$s"&#176;"</string>
+    <string name="warning_location_permission">Please allow the permission to access Location to use our service or turn on the Wi-Fi"</string>
+    <string name="msg_api_error">Request Failed with ErrorCode %1$s Please Try Again Later</string>
+    <string name="msg_call_failed">Having some server issue, find error= %1$s, Please Try Again Later"</string>
+    <string name="perm_title">Permission Required</string>
+    <string name="perm_msg">To Access Required Location Permission</string>
+    <string name="grant_btn">Grant</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="perm_warning">Permission required to check Location</string>
+    <string name="city_country_name">Location: %1$s, %2$s</string>
+    <string name="str_pressure">Pressure :\n %1$s</string>
+    <string name="str_humidity">Humidity :\n %1$s</string>
+    <string name="str_wind">Wind :\n %1$s</string>
+    <string name="str_sea_level">Sea Level :\n %1$s</string>
+</resources>
