@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         mIntent.putExtra(Constant.LATITUDE, latitude);
         mIntent.putExtra(Constant.LONGITUDE, longitude);
         PendingIntent alarmIntent = PendingIntent.getService(this, 0, mIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        alarmMgr.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 60000 * 2, alarmIntent);
+        alarmMgr.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 60000 * 120, alarmIntent);
     }
 
     public Boolean checkPermission() {
