@@ -11,7 +11,6 @@ public class Constant {
     public static final String LON_PARAMETER = "lon";
     public static final String UNITS_PARAMETER = "units";
     public static final String APPID_PARAMETER = "appid";
-    public static final String ICON_LOAD_BASE_URL = "http://openweathermap.org/img/";
     public static final String PRAGMA = "Pragma";
     public static final String CACHE_CONTROL = "Cache-Control";
     public static final int CACHE_SIZE = 15 * 1024 * 1024;
