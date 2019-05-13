@@ -1,4 +1,11 @@
 package com.example.weather.Utils;
+/**
+ * Created by NileshPatel on 2019-05-11.
+ */
+
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 
 import com.example.weather.Common.Constant;
 
@@ -28,10 +35,19 @@ public class Utils {
         try {
             DecimalFormat formater = new DecimalFormat("#");
             mkey = formater.format(Double.valueOf(key));
-        }catch (NullPointerException e){
+        } catch (NullPointerException e) {
             //DO nothing
         }
         return mkey;
+    }
+
+    public static Boolean checkConnectivity(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        if (activeNetwork != null) {
+            return activeNetwork.isConnected() & activeNetwork.getType() == ConnectivityManager.TYPE_WIFI;
+        } else return false;
     }
 
 
